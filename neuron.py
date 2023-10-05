@@ -63,7 +63,7 @@ class Neuron:
         return 2*((1/(np.exp(-10*eval/(self.Q+0.00000000000001))+1)) - 0.5)
     
     def UpdateQ(self,eval:float):
-        self.Q=clip(self.Q+config.LEARING_RATE*eval)
+        self.Q=clip(eval+config.LEARING_RATE*self.Q)
 
         self.trails+=1
         self.trails=clip(self.trails)

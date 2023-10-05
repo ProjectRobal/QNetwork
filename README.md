@@ -1,4 +1,4 @@
-# Kapibara Control Network
+# Kapibara Control Network - Legacy code
 
 ## Introduction:
 
@@ -40,15 +40,6 @@ picked action. The Q value will be used in network evaluation with feedback from
 evenly on every neuron network is made of.
 
 
-
-## Proposition:
-
-1. In a population of networks, a network is going to get information about evalutaion from network before.
-
-1. Like NEAT changes it's structure adding neurons dynamically, my algorithm could use varing number of conncection
-for each neuron.
-
-
 ## File description:
 
 - neuron.py - store class that defines neuron object
@@ -56,5 +47,4 @@ for each neuron.
 - crossover.py - holds base class for neurons and networks crossover
 - mutation.py - holds base class for neuron and network mutation
 - dotproduct.py - holds base class for dot product calculation used by neurons
-- specie.py - store class wich purpose is to hold objects with similar traits
 - composer.py - store class wich tie everything together performing the algorithm
